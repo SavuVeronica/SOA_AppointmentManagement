@@ -1,0 +1,1 @@
+{"version":3,"file":"reminder.schema.js","sourceRoot":"","sources":["../../../src/reminder/schemas/reminder.schema.ts"],"names":[],"mappings":";;;AAAA,qCAAqC;AAExB,QAAA,eAAe,GAAG,IAAI,QAAQ,CAAC,MAAM,CAAC;IACjD,KAAK,EAAE,MAAM;IACb,IAAI,EAAE,EAAC,IAAI,EAAC,MAAM,EAAE,QAAQ,EAAE,IAAI,EAAC;IACnC,IAAI,EAAE,EAAC,IAAI,EAAC,MAAM,EAAE,QAAQ,EAAE,IAAI,EAAC;CACpC,CAAC,CAAC"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"appointments.schema.js","sourceRoot":"","sources":["../../../src/appointments/schemas/appointments.schema.ts"],"names":[],"mappings":";;;AAAA,qCAAqC;AAExB,QAAA,kBAAkB,GAAG,IAAI,QAAQ,CAAC,MAAM,CAAC;IACpD,WAAW,EAAE,MAAM;IACnB,IAAI,EAAE,EAAC,IAAI,EAAC,MAAM,EAAE,QAAQ,EAAE,IAAI,EAAC;IACnC,IAAI,EAAE,EAAC,IAAI,EAAC,MAAM,EAAE,QAAQ,EAAE,IAAI,EAAC;CACpC,CAAC,CAAC"}
