@@ -17,6 +17,8 @@ The web application is created using React, Webpack 5 and Module Federation, hav
 
 A Web Socket Gateway is defined in the `admin-app` microservice, which handles the communication between the web application and the two microfrontends. Library `react-push-notification` was used in order to display to the user the notifications coming from the web socket.
 
+MongoDB Cloud is used for storing the apointments and reminders databases.
+
 ## 🌈 Preview
 
 ![alt text](https://github.com/SavuVeronica/SOA_AppointmentManagement/blob/main/Preview.png)
