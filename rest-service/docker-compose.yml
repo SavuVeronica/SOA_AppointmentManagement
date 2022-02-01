@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  api:
+    # image: savuv/rest-service
+    build:
+      dockerfile: Dockerfile
+      context: .
+    depends_on:
+      - mongodb
+    environment:
+      DATABASE_URL: mongodb+srv://user:user@clusterappointment.g5p60.mongodb.net/appointment
+      NODE_ENV: development
+      PORT: 4000
+    ports:
+      - "4000:4000"
+
+  mongodb:
+    image: mongo:5.0
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=user
+      - MONGO_INITDB_ROOT_PASSWORD=user
