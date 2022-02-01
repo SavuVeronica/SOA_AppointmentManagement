@@ -1,0 +1,30 @@
+version: '2.0'
+
+services:
+  front-container:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    depends_on:
+      - mf1
+      - mf2
+    ports:
+      - "8085:8085"
+    container_name: front-container
+    stdin_open: true
+    extra_hosts:
+      localdev: 172.22.176.1
+
+  mf1:
+      image: savuv/mf1
+      ports:
+        - "8083:8083"
+      container_name: mf1
+      stdin_open: true
+
+  mf2:
+    image: savuv/mf2
+    ports:
+      - "8084:8084"
+    container_name: mf2
+    stdin_open: true
