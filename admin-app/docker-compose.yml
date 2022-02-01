@@ -1,0 +1,38 @@
+version: "3.8"
+
+services:
+  admin-app:
+    # image: savuv/admin-app
+    build:
+      dockerfile: Dockerfile
+      context: .
+    depends_on:
+      - mongodb
+      - rabbitmq
+    environment:
+      DATABASE_URL: mongodb+srv://user:user@clusterappointment.g5p60.mongodb.net/reminder
+      NODE_ENV: development
+      PORT: 4001
+    ports:
+      - "4001:4001"
+
+  mongodb:
+    image: mongo:5.0
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=user
+      - MONGO_INITDB_ROOT_PASSWORD=user
+
+  rabbitmq:
+    image: rabbitmq:3.8-management-alpine
+    container_name: 'rabbitmq'
+    ports:
+        - 5673:5672
+        - 15673:15672
+    volumes:
+        - ~/.docker-conf/rabbitmq/data/:/var/lib/rabbitmq/
+        - ~/.docker-conf/rabbitmq/log/:/var/log/rabbitmq
+    environment:
+      - RABBITMQ_USER=djoyghlz
+      - RABBITMQ_PASSWORD=IehzmtZnAfd-rRZwKsE2fRaPTYalXkg1
+      - RABBITMQ_HOST=roedeer.rmq.cloudamqp.com/djoyghlz
+      - RABBITMQ_QUEUE_NAME=cats_queue
