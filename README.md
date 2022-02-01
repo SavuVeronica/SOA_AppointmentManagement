@@ -5,6 +5,19 @@ Appointments management application
 ## 🌈 Preview
 
 
+## System Structure
+
+The system was represented using a C4 diagram, in order to effectively represent the system arhitecture and functionality.
+The diagram has the following levels:
+1. Context Diagram - represents the main purpose of the system
+![alt text](https://github.com/SavuVeronica/SOA_AppointmentManagement/blob/main/Context_Diagram.png)
+2. Container Diagram - represents the system containers at a high level
+![alt text](https://github.com/SavuVeronica/SOA_AppointmentManagement/blob/main/Container_Diagram.png)
+3. Component Diagram - shows a more detailed decomposition of the components
+![alt text](https://github.com/SavuVeronica/SOA_AppointmentManagement/blob/main/Component_Diagram.png)
+4. Code Diagram - this one was not included here due to a huge amount of files in the 5 applications, but can be generated individually using the code editors.
+
+
 ## 🚀 Technologies & Modules
 
 - NestJs
